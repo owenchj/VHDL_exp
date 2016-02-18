@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/cal/homes/jchen/VHDL/SPI/simu
+T_opt
+!s110 1436213608
+VX4Q8_WY@Lg;IcaDTOAamZ2
+04 6 4 work tb_spi test 1
+=1-5cf9dd6f3067-559ae168-997c4-252a
+o-quiet -auto_acc_if_foreign -work work +acc
+tStats "none"
+n@_opt
+OL;O;10.4b;61
+Espi_rx2_top
+Z1 w1433065683
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8../src/spi.vhd
+Z5 F../src/spi.vhd
+l0
+L4
+V?YeO=[^<JbniM7Te?9m:_1
+!s100 I6SJaS0RiDBYj6ZhzE90b2
+Z6 OL;C;10.4b;61
+32
+Z7 !s110 1436213600
+!i10b 1
+Z8 !s108 1436213600.000000
+Z9 !s90 +acc|-work|work|-2002|-explicit|../src/spi.vhd|
+Z10 !s107 ../src/spi.vhd|
+!i113 0
+Z11 o+acc -work work -2002 -explicit
+Z12 tExplicit 1 Stats "none"
+Areceiver
+R2
+R3
+Z13 DEx4 work 11 spi_rx2_top 0 22 ?YeO=[^<JbniM7Te?9m:_1
+l15
+L13
+VlB6zBFl40FRAV@JIO=mIi2
+!s100 4^QKN37OG5_W_6Z3`7Y_n3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Etb_spi
+Z14 w1433111078
+Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z16 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+R0
+Z17 8../src/tb_spi.vhd
+Z18 F../src/tb_spi.vhd
+l0
+L5
+Ve@:49kPZ6;H1m5eM@R`8e1
+!s100 j;4zhea]ZhQNXJb1S?9WX0
+R6
+32
+R7
+!i10b 1
+R8
+Z19 !s90 +acc|-work|work|-2002|-explicit|../src/tb_spi.vhd|
+Z20 !s107 ../src/tb_spi.vhd|
+!i113 0
+R11
+R12
+Atest
+R13
+R15
+R16
+R2
+R3
+DEx4 work 6 tb_spi 0 22 e@:49kPZ6;H1m5eM@R`8e1
+l22
+L15
+Vnj8BFNj_1A;9^MO^ISJH60
+!s100 4oQOTj77860TGCJkM751l0
+R6
+32
+R7
+!i10b 1
+R8
+R19
+R20
+!i113 0
+R11
+R12

@@ -1,0 +1,8 @@
+#! /bin/sh
+
+
+mkdir $1
+cd $1
+mkdir src simu
+cp ../Makefile simu 
+cp ../Makefile src

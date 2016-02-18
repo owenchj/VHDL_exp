@@ -1,0 +1,242 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\owenc_000\Desktop\FPGA\uart\simu
+Edetect_module
+Z1 w1435892976
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\owenc_000\Desktop\FPGA\uart\simu
+Z5 8../src/detect_module.vhd
+Z6 F../src/detect_module.vhd
+l0
+L4
+VU1QY=R;T88kUa3`<3o;5B3
+Z7 OL;C;10.1c;51
+33
+Z8 !s108 1435894593.887000
+Z9 !s90 -work|work|-2008|-explicit|../src/detect_module.vhd|
+Z10 !s107 ../src/detect_module.vhd|
+Z11 o-work work -2008 -explicit
+Z12 tExplicit 1
+!s100 F7oC>_=8Q9DMORDlGiWe80
+!i10b 1
+Adetect
+R2
+R3
+DEx4 work 13 detect_module 0 22 U1QY=R;T88kUa3`<3o;5B3
+l17
+L13
+VU1cZXGX>zn^Y^H@@=N:aA0
+R7
+33
+R8
+R9
+R10
+R11
+R12
+!s100 mA<48l^NcoWzaGmYfP6oi1
+!i10b 1
+Erx_bps_module
+Z13 w1435895638
+Z14 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z16 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z17 8../src/rx_bps_module.vhd
+Z18 F../src/rx_bps_module.vhd
+l0
+L7
+Vm^a7XYU4:2:LBUcWC297Q3
+R7
+32
+Z19 !s108 1435895641.033000
+Z20 !s90 -work|work|-2002|-explicit|../src/rx_bps_module.vhd|
+Z21 !s107 ../src/rx_bps_module.vhd|
+Z22 o-work work -2002 -explicit
+R12
+!s100 `LhH8a7>Q3J<3f5W2oDTc1
+!i10b 1
+Acount
+R14
+R15
+R16
+R2
+R3
+Z23 DEx4 work 13 rx_bps_module 0 22 m^a7XYU4:2:LBUcWC297Q3
+l24
+L21
+V;9?elh<Sk0N92e=2lXLCH2
+R7
+32
+R19
+R20
+R21
+R22
+R12
+!s100 n^bHno0aFYVSFFSV]l7AT3
+!i10b 1
+Erx_control_module
+Z24 w1435982871
+R14
+R15
+R3
+R2
+R16
+R4
+Z25 8../src/rx_control_module.vhd
+Z26 F../src/rx_control_module.vhd
+l0
+L6
+V32lfg[7HmNon8fNN19bMV2
+R7
+32
+Z27 !s108 1435982877.264000
+Z28 !s90 -work|work|-2002|-explicit|../src/rx_control_module.vhd|
+Z29 !s107 ../src/rx_control_module.vhd|
+R22
+R12
+!s100 5eG^Reo05P=bF1BKSVS>I3
+!i10b 1
+Acontrol
+R14
+R15
+R3
+R2
+R16
+DEx4 work 17 rx_control_module 0 22 32lfg[7HmNon8fNN19bMV2
+l25
+L19
+V:E_PlEG<7Uog4T5a5eX090
+R7
+32
+R27
+R28
+R29
+R22
+R12
+!s100 Km6CL;;aHb^n>c]eMo>Ib1
+!i10b 1
+Erx_module
+Z30 w1436109298
+R2
+R3
+R4
+Z31 8../src/rx_module.vhd
+Z32 F../src/rx_module.vhd
+l0
+L4
+VzobkWkJ8[lVk_9omPaWWn1
+R7
+32
+Z33 !s108 1436109301.167000
+Z34 !s90 -work|work|-2002|-explicit|../src/rx_module.vhd|
+Z35 !s107 ../src/rx_module.vhd|
+R22
+R12
+!s100 I@Q@_bam3b@kmOQYGN?^50
+!i10b 1
+Abehavior
+R2
+R3
+Z36 DEx4 work 9 rx_module 0 22 zobkWkJ8[lVk_9omPaWWn1
+l49
+L16
+VmOEmic[`Ma41lQ37kKBQl0
+R7
+32
+R33
+R34
+R35
+R22
+R12
+!s100 J9c5`BUlj;]:dhInVX`4n3
+!i10b 1
+Etb_rx_bps_module
+Z37 w1435896379
+Z38 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R14
+R15
+R2
+R3
+R4
+Z39 8../src/tb_rx_bps_module.vhd
+Z40 F../src/tb_rx_bps_module.vhd
+l0
+L7
+VYz9?BzH44nHS4A<XK3<4X1
+R7
+32
+Z41 !s108 1435896381.310000
+Z42 !s90 -work|work|-2002|-explicit|../src/tb_rx_bps_module.vhd|
+Z43 !s107 ../src/tb_rx_bps_module.vhd|
+R22
+R12
+!s100 6EkV`]o[J;aao4`:K_2_D3
+!i10b 1
+Atb
+R16
+R23
+R38
+R14
+R15
+R2
+R3
+DEx4 work 16 tb_rx_bps_module 0 22 Yz9?BzH44nHS4A<XK3<4X1
+l21
+L16
+VHbE@RXjZ>z;iLzkSIKBg@2
+R7
+32
+R41
+R42
+R43
+R22
+R12
+!s100 PemK9?W:9ZN^l;]]DYJkc1
+!i10b 1
+Etb_rx_module
+Z44 w1436109886
+R38
+R14
+R15
+R2
+R3
+R4
+Z45 8../src/tb_rx_module.vhd
+Z46 F../src/tb_rx_module.vhd
+l0
+L8
+V7QnnIn9@8[=Y8_j;f_fk12
+!s100 LOV_KM@1:H]Z@YBHXVnhC2
+R7
+32
+!i10b 1
+Z47 !s108 1436109888.523000
+Z48 !s90 -work|work|-2002|-explicit|../src/tb_rx_module.vhd|
+Z49 !s107 ../src/tb_rx_module.vhd|
+R22
+R12
+Abehavior
+R36
+R38
+R14
+R15
+R2
+R3
+DEx4 work 12 tb_rx_module 0 22 7QnnIn9@8[=Y8_j;f_fk12
+l24
+L16
+V5Ll45e:RPehANk5P[PO`m1
+!s100 ?Cfk@Wi;mMOmV]BH7aTQg3
+R7
+32
+!i10b 1
+R47
+R48
+R49
+R22
+R12

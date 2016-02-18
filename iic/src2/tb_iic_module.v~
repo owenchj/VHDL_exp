@@ -1,0 +1,135 @@
+`timescale 1 ns/ 1 ps
+2. module iic_func_module_simulation();
+3.
+4. reg CLK;
+5. reg RSTn;
+6.
+7. reg [1:0] Start_Sig;
+8. reg [7:0] Addr_Sig;
+9. reg [7:0] WrData;
+10.
+11. wire Done_Sig;
+12. wire [7:0] RdData;
+13. wire SCL;
+14.
+15.
+/*************************/
+16.
+17.
+// io
+18. reg treg_SDA;
+19. wire SDA;
+   assign SDA = treg_SDA;
+22.
+23.
+/*************************/
+24.
+25.
+wire [4:0]SQ_i;
+26.
+27.
+/************************/
+28.
+29. iic_func_module U1
+30. (
+31. .CLK(CLK),
+32. .RSTn(RSTn),
+33. .Start_Sig(Start_Sig),
+34. .Addr_Sig(Addr_Sig),
+35. .WrData(WrData),
+36. .Done_Sig(Done_Sig),
+37. .RdData(RdData),
+38. .SCL(SCL),
+39. .SDA(SDA),
+40. /******************/
+41. .SQ_i( SQ_i )
+42.
+);
+43.
+44.
+/***************************/
+45. initial
+46. begin
+47.
+RSTn = 0; #10 RSTn = 1;
+48.
+49.
+50.
+CLK = 1; forever #25 CLK = ~CLK;
+end
+/******************************/
+51.
+52.
+reg [3:0]i;
+53.
+54.
+55.
+always @ ( posedge CLK or negedge RSTn )
+if( !RSTn )
+56.
+begin
+57.
+i <= 4'd0;
+58. Start_Sig <= 2'd0;
+59. Addr_Sig <= 8'd0;
+60. WrData <= 8'd0;
+61.
+62.
+63.
+end
+else
+case( i )
+
+  0:
+66. if( Done_Sig ) begin Start_Sig <= 2'd0; i <= i + 1'b1; end
+67. else begin Start_Sig <= 2'b01; Addr_Sig <= 8'b10101010; WrData <= 8'b10101010; end
+68.
+69. 1:
+70. if( Done_Sig ) begin Start_Sig <= 2'd0; i <= i + 1'b1; end
+71. else begin Start_Sig <= 2'b10; Addr_Sig <= 8'b10101010; end
+72.
+73. 2:
+74. i <= i;
+75.
+76.
+endcase
+77.
+78.
+/**************************************/
+79.
+80.
+always @ ( posedge CLK or negedge RSTn )
+81.
+if( !RSTn )
+82.
+treg_SDA <= 1'b1;
+83. else if( Start_Sig[0] )
+84. case( SQ_i )
+85.
+86. 15: treg_SDA = 1'b0;
+87. default treg_SDA = 1'b1;
+88.
+89.
+endcase
+90.
+else if( Start_Sig[1] )
+91.
+case( SQ_i )
+92.
+93.
+17: treg_SDA = 1'b0;
+94.
+95. 19,20,21,22,23,24,25,26:
+96. treg_SDA = WrData[ 26-SQ_i ];
+97.
+98.
+default treg_SDA = 1'b1;
+99.
+100.
+101.
+endcase
+102.
+103.
+/**************************************/
+104.
+105. endmodule

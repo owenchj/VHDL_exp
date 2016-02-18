@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<stdint.h>
+#include "test.h"
+#define reg (*(volatile uint32_t*) 0xffffffff)
+
+int main(){
+  printf("Hello = %d ", reg);
+  
+  return 0;
+}

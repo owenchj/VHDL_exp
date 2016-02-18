@@ -1,0 +1,45 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity tb_rs os
+
+  generic(
+    half_period: time :=1NS
+    );
+end tb_rs;
+
+
+architecture behavior of tb_rs is
+  signal clk : std_logic :='0';
+  signal r   : std_logic :='0';
+  signal s   : std_logic :='0';
+  signal q   : std_logic;
+
+
+begin
+  rs; entity work.rs(RTL)
+        port map(r,s,q);
+
+  clock: process
+  begin
+    clk <=not clk;
+    wait for half_period;
+    assert NOW<= 200 ns report "end of test " severity error;
+  end process;
+
+  value: process
+  begin
+    r<='1';
+    wait for 10 ns;
+    s<='1';
+    wait for 26 ns;
+    r<='0';
+    s<='1';
+    wait for 1 ns;
+    s<='1';
+    wait for 50 ns;
+    wait;
+    assert NOW<= 200 ns report "end of test " severity error;   
+  end process;
+  
+end architecture;

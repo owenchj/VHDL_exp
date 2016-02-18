@@ -1,0 +1,45 @@
+# //  ModelSim SE-64 10.4b May 26 2015 Linux 3.12.18-enst.1
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# vsim -t 1ps -voptargs="+acc" work.tb_spi 
+# Start time: 22:13:49 on Jul 06,2015
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb_spi(test)#1
+# Loading work.spi_rx2_top(receiver)#1
+add wave -position insertpoint  \
+sim:/tb_spi/half_period \
+sim:/tb_spi/n_bit \
+sim:/tb_spi/SCK \
+sim:/tb_spi/CS \
+sim:/tb_spi/DATA \
+sim:/tb_spi/LED \
+sim:/tb_spi/data_in \
+sim:/tb_spi/count
+run 500ns
+add wave -position insertpoint  \
+sim:/tb_spi/spi/SCK \
+sim:/tb_spi/spi/DATA \
+sim:/tb_spi/spi/CS \
+sim:/tb_spi/spi/LED \
+sim:/tb_spi/spi/data_reg
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+run 500ns
+# End time: 22:20:47 on Jul 06,2015, Elapsed time: 0:06:58
+# Errors: 0, Warnings: 0

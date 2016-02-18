@@ -1,0 +1,949 @@
+# //  ModelSim SE-64 10.4b May 26 2015 Linux 3.12.18-enst.1
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# vsim -t 1ps -voptargs="+acc" work.tb_top_segment 
+# Start time: 16:56:26 on Jul 18,2015
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_top_segment(test)#1
+# Loading work.top_segment(behavior)#1
+# Loading work.display(behavior)#1
+# Loading work.assign_seg(behavior)#1
+# Loading work.mux_date_time(behavior)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.year_month_day(behavior)#1
+# Loading work.create_year(behavior)#1
+# Loading work.create_month(behavior)#1
+# Loading work.create_day(behavior)#1
+# Loading ieee.math_real(body)
+# Loading work.hour_minute_second(behavior)#1
+# Loading work.create_hour(behavior)#1
+# Loading work.create_minute(behavior)#1
+# Loading work.create_second(behavior)#1
+# Loading work.adjust_date_time(behavior)#1
+# Loading work.no_jiter(behavior)#1
+add wave -position insertpoint  \
+sim:/tb_top_segment/half_period \
+sim:/tb_top_segment/n \
+sim:/tb_top_segment/clk \
+sim:/tb_top_segment/rstn \
+sim:/tb_top_segment/date_time_n \
+sim:/tb_top_segment/adjust \
+sim:/tb_top_segment/increament \
+sim:/tb_top_segment/seg_5 \
+sim:/tb_top_segment/seg_4 \
+sim:/tb_top_segment/seg_3 \
+sim:/tb_top_segment/seg_2 \
+sim:/tb_top_segment/seg_1 \
+sim:/tb_top_segment/seg_0
+run 1ms
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U0
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U0
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 5 ns  Iteration: 1  Instance: /tb_top_segment/time/U1
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 5 (4 downto 0). Right is 20 (4 downto -15).
+#    Time: 6 ns  Iteration: 1  Process: /tb_top_segment/time/U2/U1/line__65 File: ../src1/create_month.vhd
+# Fatal error in Process line__65 at ../src1/create_month.vhd line 69
+# 
+# HDL call sequence:
+# Stopped at ../src1/create_month.vhd 69 Process line__65
+# 
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/adjust_date_time.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adjust_date_time
+# -- Compiling architecture behavior of adjust_date_time
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/assign_seg.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity assign_seg
+# -- Compiling architecture behavior of assign_seg
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_day.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity create_day
+# -- Compiling architecture behavior of create_day
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_hour.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity create_hour
+# -- Compiling architecture behavior of create_hour
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_minute.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity create_minute
+# -- Compiling architecture behavior of create_minute
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_month.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity create_month
+# -- Compiling architecture behavior of create_month
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_second.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity create_second
+# -- Compiling architecture behavior of create_second
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_year.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity create_year
+# -- Compiling architecture behavior of create_year
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/display.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity display
+# -- Compiling architecture behavior of display
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/hour_minute_second.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity hour_minute_second
+# -- Compiling architecture behavior of hour_minute_second
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/mux_date_time.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_date_time
+# -- Compiling architecture behavior of mux_date_time
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/no_jiter.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity no_jiter
+# -- Compiling architecture behavior of no_jiter
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/tb_top_segment.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_top_segment
+# -- Compiling architecture test of tb_top_segment
+# -- Loading entity top_segment
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/top_segment.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity top_segment
+# -- Compiling architecture behavior of top_segment
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/year_month_day.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity year_month_day
+# -- Compiling architecture behavior of year_month_day
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_top_segment(test)#1
+# Loading work.top_segment(behavior)#1
+# Loading work.display(behavior)#1
+# Loading work.assign_seg(behavior)#1
+# Loading work.mux_date_time(behavior)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.year_month_day(behavior)#1
+# Loading work.create_year(behavior)#1
+# Loading work.create_month(behavior)#1
+# Loading work.create_day(behavior)#1
+# Loading ieee.math_real(body)
+# Loading work.hour_minute_second(behavior)#1
+# Loading work.create_hour(behavior)#1
+# Loading work.create_minute(behavior)#1
+# Loading work.create_second(behavior)#1
+# Loading work.adjust_date_time(behavior)#1
+# Loading work.no_jiter(behavior)#1
+run 1ms
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U0
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U0
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 5 ns  Iteration: 1  Instance: /tb_top_segment/time/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6 ns  Iteration: 2  Instance: /tb_top_segment/time/U3
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/adjust_date_time.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adjust_date_time
+# -- Compiling architecture behavior of adjust_date_time
+# ** Error: /cal/homes/jchen/VHDL/experiments/7-segment/src1/adjust_date_time.vhd(25): (vcom-1294) Declaration with designator "increament_m" already exists in this region.
+# ** =====> Prior declaration of "increament_m" is at /cal/homes/jchen/VHDL/experiments/7-segment/src1/adjust_date_time.vhd(14).
+# ** Error: /cal/homes/jchen/VHDL/experiments/7-segment/src1/adjust_date_time.vhd(47): (vcom-1136) Unknown identifier "adjust_m".
+# ** Error: /cal/homes/jchen/VHDL/experiments/7-segment/src1/adjust_date_time.vhd(64): (vcom-1136) Unknown identifier "adjust_m".
+# ** Error: /cal/homes/jchen/VHDL/experiments/7-segment/src1/adjust_date_time.vhd(64): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /cal/homes/jchen/VHDL/experiments/7-segment/src1/adjust_date_time.vhd(77): VHDL Compiler exiting
+# /comelec/softs/opt/mentor/modelsim/v10.4b/modeltech/linux_x86_64/vcom failed.
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/assign_seg.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity assign_seg
+# -- Compiling architecture behavior of assign_seg
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_day.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity create_day
+# -- Compiling architecture behavior of create_day
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_hour.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity create_hour
+# -- Compiling architecture behavior of create_hour
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_minute.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity create_minute
+# -- Compiling architecture behavior of create_minute
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_month.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity create_month
+# -- Compiling architecture behavior of create_month
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_second.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity create_second
+# -- Compiling architecture behavior of create_second
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_year.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity create_year
+# -- Compiling architecture behavior of create_year
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/display.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity display
+# -- Compiling architecture behavior of display
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/hour_minute_second.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity hour_minute_second
+# -- Compiling architecture behavior of hour_minute_second
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/mux_date_time.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_date_time
+# -- Compiling architecture behavior of mux_date_time
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/no_jiter.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity no_jiter
+# -- Compiling architecture behavior of no_jiter
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/tb_top_segment.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_top_segment
+# -- Compiling architecture test of tb_top_segment
+# -- Loading entity top_segment
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/top_segment.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity top_segment
+# -- Compiling architecture behavior of top_segment
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/year_month_day.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity year_month_day
+# -- Compiling architecture behavior of year_month_day
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/adjust_date_time.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adjust_date_time
+# -- Compiling architecture behavior of adjust_date_time
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/assign_seg.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity assign_seg
+# -- Compiling architecture behavior of assign_seg
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_day.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity create_day
+# -- Compiling architecture behavior of create_day
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_hour.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity create_hour
+# -- Compiling architecture behavior of create_hour
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_minute.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity create_minute
+# -- Compiling architecture behavior of create_minute
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_month.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity create_month
+# -- Compiling architecture behavior of create_month
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_second.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity create_second
+# -- Compiling architecture behavior of create_second
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/create_year.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity create_year
+# -- Compiling architecture behavior of create_year
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/display.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity display
+# -- Compiling architecture behavior of display
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/hour_minute_second.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity hour_minute_second
+# -- Compiling architecture behavior of hour_minute_second
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/mux_date_time.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_date_time
+# -- Compiling architecture behavior of mux_date_time
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/no_jiter.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity no_jiter
+# -- Compiling architecture behavior of no_jiter
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/tb_top_segment.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_top_segment
+# -- Compiling architecture test of tb_top_segment
+# -- Loading entity top_segment
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/top_segment.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity top_segment
+# -- Compiling architecture behavior of top_segment
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/year_month_day.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity year_month_day
+# -- Compiling architecture behavior of year_month_day
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_top_segment(test)#1
+# Loading work.top_segment(behavior)#1
+# Loading work.display(behavior)#1
+# Loading work.assign_seg(behavior)#1
+# Loading work.mux_date_time(behavior)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.year_month_day(behavior)#1
+# Loading work.create_year(behavior)#1
+# Loading work.create_month(behavior)#1
+# Loading work.create_day(behavior)#1
+# Loading ieee.math_real(body)
+# Loading work.hour_minute_second(behavior)#1
+# Loading work.create_hour(behavior)#1
+# Loading work.create_minute(behavior)#1
+# Loading work.create_second(behavior)#1
+# Loading work.adjust_date_time(behavior)#1
+# Loading work.no_jiter(behavior)#1
+run 1ms
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U0
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U0
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 5 ns  Iteration: 1  Instance: /tb_top_segment/time/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6 ns  Iteration: 2  Instance: /tb_top_segment/time/U3
+add wave -position insertpoint  \
+sim:/tb_top_segment/time/U1/mode
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/tb_top_segment.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_top_segment
+# -- Compiling architecture test of tb_top_segment
+# -- Loading entity top_segment
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_top_segment(test)#1
+# Loading work.top_segment(behavior)#1
+# Loading work.display(behavior)#1
+# Loading work.assign_seg(behavior)#1
+# Loading work.mux_date_time(behavior)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.year_month_day(behavior)#1
+# Loading work.create_year(behavior)#1
+# Loading work.create_month(behavior)#1
+# Loading work.create_day(behavior)#1
+# Loading ieee.math_real(body)
+# Loading work.hour_minute_second(behavior)#1
+# Loading work.create_hour(behavior)#1
+# Loading work.create_minute(behavior)#1
+# Loading work.create_second(behavior)#1
+# Loading work.adjust_date_time(behavior)#1
+# Loading work.no_jiter(behavior)#1
+run 1ms
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U0
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U0
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 5 ns  Iteration: 1  Instance: /tb_top_segment/time/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6 ns  Iteration: 2  Instance: /tb_top_segment/time/U3
+vcom +acc -work work -2002 -explicit /cal/homes/jchen/VHDL/experiments/7-segment/src1/tb_top_segment.vhd
+# Model Technology ModelSim SE-64 vcom 10.4b Compiler 2015.05 May 26 2015
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_top_segment
+# -- Compiling architecture test of tb_top_segment
+# -- Loading entity top_segment
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_top_segment(test)#1
+# Loading work.top_segment(behavior)#1
+# Loading work.display(behavior)#1
+# Loading work.assign_seg(behavior)#1
+# Loading work.mux_date_time(behavior)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.year_month_day(behavior)#1
+# Loading work.create_year(behavior)#1
+# Loading work.create_month(behavior)#1
+# Loading work.create_day(behavior)#1
+# Loading ieee.math_real(body)
+# Loading work.hour_minute_second(behavior)#1
+# Loading work.create_hour(behavior)#1
+# Loading work.create_minute(behavior)#1
+# Loading work.create_second(behavior)#1
+# Loading work.adjust_date_time(behavior)#1
+# Loading work.no_jiter(behavior)#1
+run 1ms
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_segment/time/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U2/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U3/U2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U0
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U0
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_segment/time/U4/U1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 5 ns  Iteration: 1  Instance: /tb_top_segment/time/U1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6 ns  Iteration: 2  Instance: /tb_top_segment/time/U3
+# End time: 17:38:41 on Jul 18,2015, Elapsed time: 0:42:15
+# Errors: 8, Warnings: 164
